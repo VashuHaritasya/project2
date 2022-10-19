@@ -41,3 +41,14 @@ function closeCoupon() {
   document.getElementById("coupon").style.visibility = "hidden";
   document.getElementById("main").style.opacity = "1";
 }
+//!dark/Light Mode
+const darkModeToggle = document.querySelector("#dark-mode-toggle");
+let light = document.querySelector(".lightmode");
+
+darkModeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("darkmode");
+});
+
+light.addEventListener("click", function (light) {
+  light.target.classList.toggle("darkModeIcon");
+});
